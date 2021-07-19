@@ -1,0 +1,17 @@
+{
+  "name": "node-sever",
+  "version": "1.0.0",
+  "description": "Node.js server with clusterization",
+  "private": true,
+  "devDependencies": {
+    "autocannon": "^7.4.0",
+    "nodemon": "^2.0.12"
+  },
+  "scripts": {
+    "start": "node cluster.js",
+    "watch": "nodemon cluster.js",
+    "autocannon-run": "autocannon -c 200 -d 10 http://localhost:8800"
+  },
+  "author": "",
+  "license": "ISC"
+}
